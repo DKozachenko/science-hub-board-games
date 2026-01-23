@@ -16,7 +16,8 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "browser": "src/main.ts",
+            "browser": "src/app/entrypoint/main.ts",
+            "index": "src/app/entrypoint/index.html",
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
@@ -25,7 +26,7 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/app/entrypoint/styles.css"
             ]
           },
           "configurations": {
@@ -63,9 +64,6 @@
             }
           },
           "defaultConfiguration": "development"
-        },
-        "test": {
-          "builder": "@angular/build:unit-test"
         }
       }
     }

@@ -25,12 +25,12 @@ module.exports = {
     { value: 'WIP', name: 'WIP:      Work in progress' },
   ],
   scopes: [
-    { name: 'core' },
-    { name: 'feature' },
-    { name: 'layout' },
-    { name: 'pattern' },
-    { name: 'ui' },
-    { name: 'all' },
+    { name: 'app' },
+    { name: 'pages' },
+    { name: 'widgets' },
+    { name: 'features' },
+    { name: 'entities' },
+    { name: 'shared' },
   ],
   messages: {
     type: "Select the type of change that you're committing:",

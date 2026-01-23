@@ -3,23 +3,17 @@
   "version": "0.0.0",
   "scripts": {
     "start": "ng serve",
-    "build": "ng build",
+    "----------------BUILD----------------": "",
+    "build:development": "ng build --configuration=development",
+    "build:production": "ng build --configuration=production",
     "----------------LINT----------------": "",
     "lint": "eslint ./src --config ./configs/eslint/eslint.config.ts",
     "stylelint": "stylelint './src/**/*.{scss,css}' --config ./configs/stylelint/stylelint.config.js",
+    "presteiger": "cp ./configs/steiger/steiger.config.ts ./steiger.config.ts",
+    "steiger": "steiger ./src",
+    "poststeiger": "rm ./steiger.config.ts",
+    "----------------LINT-STAGED----------------": "",
     "lint-staged": "lint-staged --config ./configs/lint-staged/.lintstagedrc.json"
-  },
-  "prettier": {
-    "printWidth": 100,
-    "singleQuote": true,
-    "overrides": [
-      {
-        "files": "*.html",
-        "options": {
-          "parser": "angular"
-        }
-      }
-    ]
   },
   "private": true,
   "packageManager": "npm@10.8.2",
@@ -33,6 +27,7 @@
     "@angular/forms": "21.1.1",
     "@angular/platform-browser": "21.1.1",
     "@angular/router": "21.1.1",
+    "date-fns": "4.1.0",
     "rxjs": "7.8.2",
     "tslib": "2.8.1"
   },
@@ -40,6 +35,7 @@
     "@angular/build": "21.1.1",
     "@angular/cli": "21.1.1",
     "@angular/compiler-cli": "21.1.1",
+    "@feature-sliced/steiger-plugin": "0.5.7",
     "@tailwindcss/postcss": "4.1.12",
     "angular-eslint": "21.1.0",
     "cz-conventional-changelog": "3.3.0",
@@ -53,6 +49,7 @@
     "lint-staged": "16.2.7",
     "postcss": "8.5.3",
     "prettier": "3.8.1",
+    "steiger": "0.5.11",
     "stylelint": "17.0.0",
     "stylelint-config-standard-scss": "17.0.0",
     "stylelint-prettier": "5.0.3",
