@@ -32,7 +32,7 @@
 
   <tbody>
     @for (playerRow of mainTable.data; track playerRow.id) {
-      <tr>
+      <tr class="table-row" [class.expanded]="playerRow.expand">
         <td [(nzExpand)]="playerRow.expand"></td>
         <td>{{ playerRow.player.name }}</td>
         <td>{{ playerRow.totalTrainings }}</td>
