@@ -1,0 +1,40 @@
+import { Column } from '../model/column.interface';
+
+export const INNER_COLUMNS: Column[] = [
+  {
+    name: 'Период',
+    width: '30%',
+    showSort: false,
+    sortOrder: null,
+    sortFn: null,
+    sortDirections: [],
+    showFilter: false,
+    filterMultiple: false,
+    listOfFilter: [],
+    filterFn: null,
+  },
+  {
+    name: '',
+    width: '30%',
+    showSort: false,
+    sortOrder: null,
+    sortFn: null,
+    sortDirections: [],
+    showFilter: false,
+    filterMultiple: false,
+    listOfFilter: [],
+    filterFn: null,
+  },
+  {
+    name: '',
+    width: '30%',
+    showSort: false,
+    sortOrder: null,
+    sortFn: null,
+    sortDirections: [],
+    showFilter: false,
+    filterMultiple: false,
+    listOfFilter: [],
+    filterFn: null,
+  },
+];

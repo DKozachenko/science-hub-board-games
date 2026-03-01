@@ -1,0 +1,88 @@
+<nz-table
+  #mainTable
+  nzTableLayout="fixed"
+  [nzData]="playersRows()"
+  [nzShowPagination]="false"
+  [nzFrontPagination]="false"
+>
+  <thead>
+    <tr>
+      <th nzWidth="48px"></th>
+      @for (column of MAIN_COLUMNS; track column.name) {
+        <th
+          [nzWidth]="column.width"
+          [nzSortOrder]="column.sortOrder"
+          [nzSortFn]="column.sortFn"
+          [nzSortDirections]="column.sortDirections"
+          [nzFilterMultiple]="column.filterMultiple"
+          [nzFilters]="column.listOfFilter"
+          [nzFilterFn]="column.filterFn"
+        >
+          <span nz-typography>
+            <strong>
+              {{ column.name }}
+            </strong>
+          </span>
+        </th>
+      }
+    </tr>
+  </thead>
+
+  <tbody>
+    @for (playerRow of mainTable.data; track playerRow.id) {
+      <tr>
+        <td [(nzExpand)]="playerRow.expand"></td>
+        <td>{{ playerRow.player.name }}</td>
+        <td>{{ playerRow.totalTrainings }}</td>
+        <td>{{ playerRow.totalGoals }}</td>
+      </tr>
+
+      <tr class="inner-table-row" [nzExpand]="playerRow.expand">
+        <nz-table
+          #innerTable
+          class="inner-table"
+          nzTableLayout="fixed"
+          [nzData]="playerRow.periodsStats"
+          [nzShowPagination]="false"
+          [nzFrontPagination]="false"
+        >
+          <thead>
+            <tr>
+              <th nzWidth="48px"></th>
+              @for (column of INNER_COLUMNS; track column.name) {
+                <th
+                  [nzWidth]="column.width"
+                  [nzShowSort]="column.showSort"
+                  [nzSortOrder]="column.sortOrder"
+                  [nzSortFn]="column.sortFn"
+                  [nzSortDirections]="column.sortDirections"
+                  [nzShowFilter]="column.showFilter"
+                  [nzFilterMultiple]="column.filterMultiple"
+                  [nzFilters]="column.listOfFilter"
+                  [nzFilterFn]="column.filterFn"
+                >
+                  <span nz-typography>
+                    <strong>
+                      {{ column.name }}
+                    </strong>
+                  </span>
+                </th>
+              }
+            </tr>
+          </thead>
+
+          <tbody>
+            @for (statRow of innerTable.data; track statRow) {
+              <tr>
+                <td></td>
+                <td>{{ statRow.period.label }}</td>
+                <td>{{ statRow.stats.trainings | formatStat }}</td>
+                <td>{{ statRow.stats.goals | formatStat }}</td>
+              </tr>
+            }
+          </tbody>
+        </nz-table>
+      </tr>
+    }
+  </tbody>
+</nz-table>

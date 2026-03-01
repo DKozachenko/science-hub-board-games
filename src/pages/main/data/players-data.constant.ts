@@ -1,0 +1,206 @@
+import { Period } from '@entities/period/period.interface';
+import { Player } from '@entities/player/player.interface';
+import { PlayerData } from '@entities/player-data/player-data.interface';
+
+export const PLAYERS: Player[] = [
+  { id: 1, name: 'Соня' },
+  { id: 2, name: 'Даша' },
+  { id: 3, name: 'Полина' },
+  { id: 4, name: 'Оля' },
+  { id: 5, name: 'Диана Михниченко' },
+  { id: 6, name: 'Маша' },
+  { id: 7, name: 'Юля' },
+  { id: 8, name: 'Дарина' },
+  { id: 9, name: 'Вика' },
+  { id: 10, name: 'Лена' },
+  { id: 11, name: 'Настя J' },
+  { id: 12, name: 'Аннушка' },
+  { id: 13, name: 'Юля Яковлева' },
+  { id: 14, name: 'Анна' },
+  { id: 15, name: 'Тиана' },
+  { id: 16, name: 'Таня' },
+  { id: 17, name: 'Оля Михайленко' },
+  { id: 18, name: 'Алина' },
+  { id: 19, name: 'Люся' },
+  { id: 20, name: 'Диана Козаченко' },
+  { id: 21, name: 'Яна' },
+  { id: 22, name: 'Уля' },
+  { id: 23, name: 'Вика Комратова' },
+];
+
+export const PERIODS: Period[] = [
+  { id: 1, label: 'Декабрь 2025' },
+  { id: 2, label: 'Январь 2026' },
+  { id: 3, label: 'Февраль 2026' },
+];
+
+export const PLAYER_DATA: PlayerData[] = [
+  {
+    player: PLAYERS[0], // Соня
+    statsByPeriod: new Map([
+      [1, { trainings: 1, goals: 0 }],
+      [2, { trainings: 0, goals: 0 }],
+    ]),
+  },
+  {
+    player: PLAYERS[1], // Даша
+    statsByPeriod: new Map([
+      [1, { trainings: 4, goals: 12 }],
+      [2, { trainings: 3, goals: 6 }],
+      [3, { trainings: 3, goals: 3 }],
+    ]),
+  },
+  {
+    player: PLAYERS[2], // Полина
+    statsByPeriod: new Map([
+      [1, { trainings: 4, goals: 1 }],
+      [2, { trainings: 3, goals: 0 }],
+      [3, { trainings: 2, goals: 3 }],
+    ]),
+  },
+  {
+    player: PLAYERS[3], // Оля
+    statsByPeriod: new Map([
+      [1, { trainings: 4, goals: 9 }],
+      [2, { trainings: 2, goals: 4 }],
+      [3, { trainings: 3, goals: 6 }],
+    ]),
+  },
+  {
+    player: PLAYERS[4], // Диана Михниченко
+    statsByPeriod: new Map([
+      [1, { trainings: 5, goals: 5 }],
+      [2, { trainings: 1, goals: 0 }],
+      [3, { trainings: 6, goals: 8 }],
+    ]),
+  },
+  {
+    player: PLAYERS[5], // Маша
+    statsByPeriod: new Map([
+      [1, { trainings: 8, goals: 12 }],
+      [2, { trainings: 4, goals: 3 }],
+      [3, { trainings: 6, goals: 9 }],
+    ]),
+  },
+  {
+    player: PLAYERS[6], // Юля
+    statsByPeriod: new Map([
+      [1, { trainings: 6, goals: 7 }],
+      [2, { trainings: 4, goals: 2 }],
+      [3, { trainings: 7, goals: 12 }],
+    ]),
+  },
+  {
+    player: PLAYERS[7], // Дарина
+    statsByPeriod: new Map([
+      [1, { trainings: 0, goals: 0 }],
+      [2, { trainings: 1, goals: 1 }],
+      [3, { trainings: 7, goals: 8 }],
+    ]),
+  },
+  {
+    player: PLAYERS[8], // Вика
+    statsByPeriod: new Map([
+      [1, { trainings: 8, goals: 17 }],
+      [2, { trainings: 3, goals: 4 }],
+      [3, { trainings: 7, goals: 15 }],
+    ]),
+  },
+  {
+    player: PLAYERS[9], // Лена
+    statsByPeriod: new Map([
+      [1, { trainings: 5, goals: 9 }],
+      [2, { trainings: 4, goals: 2 }],
+      [3, { trainings: 2, goals: 2 }],
+    ]),
+  },
+  {
+    player: PLAYERS[10], // Настя J
+    statsByPeriod: new Map([
+      [1, { trainings: 2, goals: 2 }],
+      [2, { trainings: 0, goals: 0 }],
+    ]),
+  },
+  {
+    player: PLAYERS[11], // Аннушка
+    statsByPeriod: new Map([
+      [1, { trainings: 3, goals: 3 }],
+      [2, { trainings: 2, goals: 1 }],
+      [3, { trainings: 4, goals: 2 }],
+    ]),
+  },
+  {
+    player: PLAYERS[12], // Юля Яковлева
+    statsByPeriod: new Map([
+      [1, { trainings: 6, goals: 11 }],
+      [2, { trainings: 4, goals: 5 }],
+      [3, { trainings: 2, goals: 3 }],
+    ]),
+  },
+  {
+    player: PLAYERS[13], // Анна
+    statsByPeriod: new Map([
+      [1, { trainings: 0, goals: 0 }],
+      [2, { trainings: 0, goals: 0 }],
+    ]),
+  },
+  {
+    player: PLAYERS[14], // Тиана
+    statsByPeriod: new Map([
+      [1, { trainings: 0, goals: 0 }],
+      [2, { trainings: 0, goals: 0 }],
+    ]),
+  },
+  {
+    player: PLAYERS[15], // Таня
+    statsByPeriod: new Map([
+      [1, { trainings: 0, goals: 0 }],
+      [2, { trainings: 0, goals: 0 }],
+    ]),
+  },
+  {
+    player: PLAYERS[16], // Оля Михайленко
+    statsByPeriod: new Map([
+      [1, { trainings: 5, goals: 1 }],
+      [2, { trainings: 3, goals: 5 }],
+      [3, { trainings: 4, goals: 8 }],
+    ]),
+  },
+  {
+    player: PLAYERS[17], // Алина
+    statsByPeriod: new Map([
+      [1, { trainings: 1, goals: 1 }],
+      [2, { trainings: 0, goals: 0 }],
+    ]),
+  },
+  {
+    player: PLAYERS[18], // Люся
+    statsByPeriod: new Map([
+      [1, { trainings: 1, goals: 1 }],
+      [2, { trainings: 0, goals: 0 }],
+    ]),
+  },
+  {
+    player: PLAYERS[19], // Диана Козаченко
+    statsByPeriod: new Map([
+      [1, { trainings: 5, goals: 15 }],
+      [2, { trainings: 5, goals: 10 }],
+      [3, { trainings: 5, goals: 11 }],
+    ]),
+  },
+  {
+    player: PLAYERS[20], // Яна
+    statsByPeriod: new Map([
+      [1, { trainings: 2, goals: 1 }],
+      [2, { trainings: 0, goals: 0 }],
+    ]),
+  },
+  {
+    player: PLAYERS[21], // Уля
+    statsByPeriod: new Map([[2, { trainings: 2, goals: 1 }]]),
+  },
+  {
+    player: PLAYERS[22], // Вика Комратова
+    statsByPeriod: new Map([[3, { trainings: 5, goals: 1 }]]),
+  },
+];
