@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "science-hub-board-games": {
+    "sports-sisters-stats": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -64,10 +64,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "science-hub-board-games:build:production"
+              "buildTarget": "sports-sisters-stats:build:production"
             },
             "development": {
-              "buildTarget": "science-hub-board-games:build:development"
+              "buildTarget": "sports-sisters-stats:build:development"
             }
           },
           "defaultConfiguration": "development"

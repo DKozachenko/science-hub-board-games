@@ -120,9 +120,9 @@ jobs:
           key: "${{ needs.create-cache-key.outputs.cache-key }}"
           fail-on-cache-miss: true
       - name: Build web app for GitHub Pages
-        run: npm run build:production -- --base-href=/science-hub-board-games/
+        run: npm run build:production -- --base-href=/sports-sisters-stats/
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/science-hub-board-games/browser
+          publish_dir: ./dist/sports-sisters-stats/browser
