@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
-import { PlayerData } from '@entities/player-data/player-data.interface';
+import { PlayerData } from '@entities/player-datas';
 import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzTypographyModule } from 'ng-zorro-antd/typography';
 import { INNER_COLUMNS } from '../../data/inner-columns.constant';

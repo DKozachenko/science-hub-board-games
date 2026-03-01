@@ -1,4 +1,4 @@
-import { PlayerData } from '@entities/player-data/player-data.interface';
+import { PlayerData } from '@entities/player-datas';
 import { PeriodStats } from './period-stats.interface';
 
 export interface PlayerRow extends PlayerData {

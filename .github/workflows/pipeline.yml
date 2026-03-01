@@ -106,10 +106,9 @@ jobs:
         run: npm run build:production
 
   deploy:
-    # if: github.event_name == 'push' && github.ref_name == 'develop'
+    if: github.event_name == 'push' && github.ref_name == 'develop'
     name: Deploy (GitHub Pages)
-    # needs: [create-cache-key, cache-deps, lint, stylelint, steiger, build]
-    needs: [create-cache-key, cache-deps]
+    needs: [create-cache-key, cache-deps, lint, stylelint, steiger, build]
     runs-on: ubuntu-latest
     steps:
       - name: Get repository code

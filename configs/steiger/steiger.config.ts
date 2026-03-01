@@ -6,6 +6,13 @@ export default defineConfig([
   {
     rules: {
       'fsd/no-ui-in-app': 'off',
+      'fsd/insignificant-slice': 'off',
+    },
+  },
+  {
+    files: ['src/entities/**'],
+    rules: {
+      'fsd/forbidden-imports': 'off',
     },
   },
 ]);

@@ -1,7 +1,7 @@
-import { Period } from '@entities/period/period.interface';
-import { StatsCell } from './stats-cell.interface';
+import { Period } from '@entities/periods';
+import { Stats } from '@entities/stats';
 
 export interface PeriodStats {
   period: Period;
-  stats: StatsCell;
+  stats: Stats;
 }

@@ -1,6 +1,6 @@
-import { Period } from '@entities/period/period.interface';
-import { Player } from '@entities/player/player.interface';
-import { PlayerData } from '@entities/player-data/player-data.interface';
+import { Period } from '@entities/periods';
+import { PlayerData } from '@entities/player-datas';
+import { Player } from '@entities/players';
 
 export const PLAYERS: Player[] = [
   { id: 1, name: 'Соня' },
