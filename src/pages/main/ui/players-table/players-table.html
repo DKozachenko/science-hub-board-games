@@ -11,9 +11,11 @@
       @for (column of MAIN_COLUMNS; track column.name) {
         <th
           [nzWidth]="column.width"
+          [nzShowSort]="column.showSort"
           [nzSortOrder]="column.sortOrder"
           [nzSortFn]="column.sortFn"
           [nzSortDirections]="column.sortDirections"
+          [nzShowFilter]="column.showFilter"
           [nzFilterMultiple]="column.filterMultiple"
           [nzFilters]="column.listOfFilter"
           [nzFilterFn]="column.filterFn"
