@@ -1,0 +1,21 @@
+/* Indents */
+:host ::ng-deep .inner-table .ant-table {
+  margin-left: 0 !important;
+}
+
+:host ::ng-deep .inner-table-row > .ant-table-cell {
+  padding-left: 0 !important;
+}
+
+/* Background-color */
+:host ::ng-deep .ant-table-thead > tr > th {
+  background-color: lightgray;
+}
+
+:host ::ng-deep .inner-table .ant-table-thead > tr > th:first-child {
+  background-color: transparent;
+}
+
+:host ::ng-deep .table-row.expanded {
+  background-color: #e2f3f9;
+}
