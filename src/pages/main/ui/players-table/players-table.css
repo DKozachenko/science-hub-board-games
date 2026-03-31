@@ -19,3 +19,7 @@
 :host ::ng-deep .table-row.expanded {
   background-color: #e2f3f9;
 }
+
+:host ::ng-deep .table-row.expanded:hover > td {
+  background-color: #e2f3f9;
+}
