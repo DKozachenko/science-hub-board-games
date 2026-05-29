@@ -6,7 +6,7 @@ export const PLAYERS: Player[] = [
   { id: 1, name: 'Соня' },
   { id: 2, name: 'Даша' },
   { id: 3, name: 'Полина' },
-  { id: 4, name: 'Оля' },
+  { id: 4, name: 'Оля Кривенко' },
   { id: 5, name: 'Диана Михниченко' },
   { id: 6, name: 'Маша' },
   { id: 7, name: 'Юля' },
@@ -28,7 +28,7 @@ export const PLAYERS: Player[] = [
   { id: 23, name: 'Вика Комратова' },
   { id: 24, name: 'Татьяна (мама Вики)' },
   { id: 25, name: 'Лиза' },
-  { id: 26, name: 'Оля (новенькая)' },
+  { id: 26, name: 'Оля' },
 ];
 
 export const PERIODS: Period[] = [
@@ -37,6 +37,7 @@ export const PERIODS: Period[] = [
   { id: 3, label: 'Февраль 2026' },
   { id: 4, label: 'Март 2026' },
   { id: 5, label: 'Апрель 2026' },
+  { id: 6, label: 'Май 2026' },
 ];
 
 export const PLAYER_DATA: PlayerData[] = [
@@ -67,16 +68,18 @@ export const PLAYER_DATA: PlayerData[] = [
       [3, { trainings: 2, goals: 3 }],
       [4, { trainings: 3, goals: 0 }],
       [5, { trainings: 9, goals: 2 }],
+      [6, { trainings: 3, goals: 3 }],
     ]),
   },
   {
-    player: PLAYERS[3], // Оля
+    player: PLAYERS[3], // Оля Кривенко
     statsByPeriod: new Map([
       [1, { trainings: 4, goals: 9 }],
       [2, { trainings: 2, goals: 4 }],
       [3, { trainings: 3, goals: 6 }],
       [4, { trainings: 4, goals: 17 }],
       [5, { trainings: 8, goals: 12 }],
+      [6, { trainings: 3, goals: 12 }],
     ]),
   },
   {
@@ -87,6 +90,7 @@ export const PLAYER_DATA: PlayerData[] = [
       [3, { trainings: 6, goals: 8 }],
       [4, { trainings: 6, goals: 6 }],
       [5, { trainings: 10, goals: 10 }],
+      [6, { trainings: 6, goals: 15 }],
     ]),
   },
   {
@@ -97,6 +101,7 @@ export const PLAYER_DATA: PlayerData[] = [
       [3, { trainings: 6, goals: 9 }],
       [4, { trainings: 7, goals: 17 }],
       [5, { trainings: 11, goals: 16 }],
+      [6, { trainings: 6, goals: 13 }],
     ]),
   },
   {
@@ -107,6 +112,7 @@ export const PLAYER_DATA: PlayerData[] = [
       [3, { trainings: 7, goals: 12 }],
       [4, { trainings: 3, goals: 2 }],
       [5, { trainings: 13, goals: 19 }],
+      [6, { trainings: 3, goals: 7 }],
     ]),
   },
   {
@@ -117,6 +123,7 @@ export const PLAYER_DATA: PlayerData[] = [
       [3, { trainings: 7, goals: 8 }],
       [4, { trainings: 5, goals: 9 }],
       [5, { trainings: 10, goals: 14 }],
+      [6, { trainings: 5, goals: 15 }],
     ]),
   },
   {
@@ -127,6 +134,7 @@ export const PLAYER_DATA: PlayerData[] = [
       [3, { trainings: 7, goals: 15 }],
       [4, { trainings: 7, goals: 16 }],
       [5, { trainings: 12, goals: 16 }],
+      [6, { trainings: 6, goals: 17 }],
     ]),
   },
   {
@@ -137,6 +145,7 @@ export const PLAYER_DATA: PlayerData[] = [
       [3, { trainings: 2, goals: 2 }],
       [4, { trainings: 2, goals: 4 }],
       [5, { trainings: 6, goals: 15 }],
+      [6, { trainings: 4, goals: 9 }],
     ]),
   },
   {
@@ -146,6 +155,7 @@ export const PLAYER_DATA: PlayerData[] = [
       [2, { trainings: 0, goals: 0 }],
       [4, { trainings: 1, goals: 1 }],
       [5, { trainings: 9, goals: 13 }],
+      [6, { trainings: 4, goals: 11 }],
     ]),
   },
   {
@@ -156,6 +166,7 @@ export const PLAYER_DATA: PlayerData[] = [
       [3, { trainings: 4, goals: 2 }],
       [4, { trainings: 2, goals: 0 }],
       [5, { trainings: 3, goals: 1 }],
+      [6, { trainings: 1, goals: 0 }],
     ]),
   },
   {
@@ -199,6 +210,7 @@ export const PLAYER_DATA: PlayerData[] = [
       [3, { trainings: 4, goals: 8 }],
       [4, { trainings: 4, goals: 3 }],
       [5, { trainings: 5, goals: 5 }],
+      [6, { trainings: 3, goals: 4 }],
     ]),
   },
   {
@@ -223,6 +235,7 @@ export const PLAYER_DATA: PlayerData[] = [
       [3, { trainings: 5, goals: 11 }],
       [4, { trainings: 7, goals: 11 }],
       [5, { trainings: 14, goals: 24 }],
+      [6, { trainings: 6, goals: 13 }],
     ]),
   },
   {
@@ -244,6 +257,7 @@ export const PLAYER_DATA: PlayerData[] = [
       [3, { trainings: 5, goals: 1 }],
       [4, { trainings: 6, goals: 0 }],
       [5, { trainings: 7, goals: 0 }],
+      [6, { trainings: 7, goals: 0 }],
     ]),
   },
   {
@@ -251,11 +265,17 @@ export const PLAYER_DATA: PlayerData[] = [
     statsByPeriod: new Map([[4, { trainings: 1, goals: 1 }]]),
   },
   {
-    player: PLAYERS[24],
-    statsByPeriod: new Map([[5, { trainings: 2, goals: 1 }]]),
+    player: PLAYERS[24], // Лиза
+    statsByPeriod: new Map([
+      [5, { trainings: 2, goals: 1 }],
+      [6, { trainings: 1, goals: 2 }],
+    ]),
   },
   {
-    player: PLAYERS[25],
-    statsByPeriod: new Map([[5, { trainings: 1, goals: 0 }]]),
+    player: PLAYERS[25], // Оля
+    statsByPeriod: new Map([
+      [5, { trainings: 1, goals: 0 }],
+      [6, { trainings: 2, goals: 1 }],
+    ]),
   },
 ];
