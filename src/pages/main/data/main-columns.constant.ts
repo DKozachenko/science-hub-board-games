@@ -44,4 +44,16 @@ export const MAIN_COLUMNS: Column[] = [
     listOfFilter: [],
     filterFn: null,
   },
+  {
+    name: 'Голевые передачи',
+    width: '30%',
+    showSort: true,
+    sortDirections: ['ascend', 'descend', null],
+    sortOrder: null,
+    sortFn: (a: PlayerRow, b: PlayerRow) => a.totalAssists - b.totalAssists,
+    showFilter: false,
+    filterMultiple: true,
+    listOfFilter: [],
+    filterFn: null,
+  },
 ];

@@ -37,6 +37,7 @@
         <td>{{ playerRow.player.name }}</td>
         <td>{{ playerRow.totalTrainings }}</td>
         <td>{{ playerRow.totalGoals }}</td>
+        <td>{{ playerRow.totalAssists }}</td>
       </tr>
 
       <tr class="inner-table-row" [nzExpand]="playerRow.expand">
@@ -80,6 +81,7 @@
                 <td>{{ statRow.period.label }}</td>
                 <td>{{ statRow.stats.trainings | formatStat }}</td>
                 <td>{{ statRow.stats.goals | formatStat }}</td>
+                <td>{{ statRow.stats.assists | formatStat }}</td>
               </tr>
             }
           </tbody>

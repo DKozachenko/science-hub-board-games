@@ -37,4 +37,16 @@ export const INNER_COLUMNS: Column[] = [
     listOfFilter: [],
     filterFn: null,
   },
+  {
+    name: '',
+    width: '30%',
+    showSort: false,
+    sortOrder: null,
+    sortFn: null,
+    sortDirections: [],
+    showFilter: false,
+    filterMultiple: false,
+    listOfFilter: [],
+    filterFn: null,
+  },
 ];

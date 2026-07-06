@@ -35,6 +35,11 @@ export class PlayersTableComponent {
         0,
       );
 
+      const totalAssists = Array.from(dataItem.statsByPeriod.values()).reduce(
+        (accumulator, currentValue) => accumulator + (currentValue.assists ?? 0),
+        0,
+      );
+
       const periodsStats: PeriodStats[] = Array.from(dataItem.statsByPeriod.entries()).map(([periodId, stats]) => {
         const period = PERIODS.find((p) => p.id === periodId);
 
@@ -52,6 +57,7 @@ export class PlayersTableComponent {
         id: index + 1,
         ...dataItem,
         totalGoals,
+        totalAssists,
         totalTrainings,
         periodsStats,
         expand: false,

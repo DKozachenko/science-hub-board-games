@@ -5,6 +5,7 @@ export interface PlayerRow extends PlayerData {
   id: number;
   expand: boolean;
   totalGoals: number;
+  totalAssists: number;
   totalTrainings: number;
   periodsStats: PeriodStats[];
 }
