@@ -32,6 +32,7 @@ export const PLAYERS: Player[] = [
   { id: 27, name: 'Наташа' },
   { id: 28, name: 'Маша' },
   { id: 29, name: 'Лена' },
+  { id: 30, name: 'Женя' },
 ];
 
 export const PERIODS: Period[] = [
@@ -43,6 +44,7 @@ export const PERIODS: Period[] = [
   { id: 6, label: 'Май 2026' },
   { id: 7, label: 'Июнь 2026' },
   { id: 8, label: 'Июль 2026' },
+  { id: 9, label: 'Август 2026' },
 ];
 
 export const PLAYER_DATA: PlayerData[] = [
@@ -64,6 +66,7 @@ export const PLAYER_DATA: PlayerData[] = [
       [4, { trainings: 1, goals: 2, assists: null }],
       [5, { trainings: 1, goals: 2, assists: null }],
       [8, { trainings: 1, goals: 0, assists: 0 }],
+      [9, { trainings: 1, goals: 1, assists: 1 }],
     ]),
   },
   {
@@ -77,6 +80,7 @@ export const PLAYER_DATA: PlayerData[] = [
       [6, { trainings: 3, goals: 3, assists: null }],
       [7, { trainings: 2, goals: 5, assists: 0 }],
       [8, { trainings: 5, goals: 3, assists: 1 }],
+      [9, { trainings: 8, goals: 12, assists: 3 }],
     ]),
   },
   {
@@ -116,6 +120,7 @@ export const PLAYER_DATA: PlayerData[] = [
       [6, { trainings: 6, goals: 13, assists: null }],
       [7, { trainings: 5, goals: 5, assists: 5 }],
       [8, { trainings: 8, goals: 6, assists: 6 }],
+      [9, { trainings: 7, goals: 8, assists: 4 }],
     ]),
   },
   {
@@ -141,6 +146,7 @@ export const PLAYER_DATA: PlayerData[] = [
       [6, { trainings: 5, goals: 15, assists: null }],
       [7, { trainings: 5, goals: 6, assists: 5 }],
       [8, { trainings: 9, goals: 11, assists: 1 }],
+      [9, { trainings: 6, goals: 8, assists: 3 }],
     ]),
   },
   {
@@ -167,6 +173,7 @@ export const PLAYER_DATA: PlayerData[] = [
       [6, { trainings: 4, goals: 9, assists: null }],
       [7, { trainings: 2, goals: 6, assists: 4 }],
       [8, { trainings: 2, goals: 0, assists: 1 }],
+      [9, { trainings: 6, goals: 6, assists: 10 }],
     ]),
   },
   {
@@ -202,6 +209,7 @@ export const PLAYER_DATA: PlayerData[] = [
       [4, { trainings: 7, goals: 16, assists: null }],
       [5, { trainings: 9, goals: 15, assists: null }],
       [8, { trainings: 5, goals: 13, assists: 3 }],
+      [9, { trainings: 2, goals: 0, assists: 2 }],
     ]),
   },
   {
@@ -216,6 +224,7 @@ export const PLAYER_DATA: PlayerData[] = [
     statsByPeriod: new Map([
       [1, { trainings: 0, goals: 0, assists: null }],
       [2, { trainings: 0, goals: 0, assists: null }],
+      [9, { trainings: 4, goals: 3, assists: 3 }],
     ]),
   },
   {
@@ -225,6 +234,7 @@ export const PLAYER_DATA: PlayerData[] = [
       [2, { trainings: 0, goals: 0, assists: null }],
       [4, { trainings: 1, goals: 1, assists: null }],
       [5, { trainings: 6, goals: 2, assists: null }],
+      [9, { trainings: 1, goals: 0, assists: 0 }],
     ]),
   },
   {
@@ -238,6 +248,7 @@ export const PLAYER_DATA: PlayerData[] = [
       [6, { trainings: 3, goals: 4, assists: null }],
       [7, { trainings: 4, goals: 10, assists: 3 }],
       [8, { trainings: 2, goals: 0, assists: 0 }],
+      [9, { trainings: 6, goals: 11, assists: 5 }],
     ]),
   },
   {
@@ -265,6 +276,7 @@ export const PLAYER_DATA: PlayerData[] = [
       [6, { trainings: 6, goals: 13, assists: null }],
       [7, { trainings: 5, goals: 8, assists: 8 }],
       [8, { trainings: 8, goals: 9, assists: 13 }],
+      [9, { trainings: 6, goals: 12, assists: 5 }],
     ]),
   },
   {
@@ -289,6 +301,7 @@ export const PLAYER_DATA: PlayerData[] = [
       [6, { trainings: 7, goals: 0, assists: null }],
       [7, { trainings: 5, goals: 0, assists: 1 }],
       [8, { trainings: 6, goals: 0, assists: 3 }],
+      [9, { trainings: 5, goals: 3, assists: 1 }],
     ]),
   },
   {
@@ -322,6 +335,13 @@ export const PLAYER_DATA: PlayerData[] = [
   },
   {
     player: PLAYERS[28], // Лена
-    statsByPeriod: new Map([[8, { trainings: 3, goals: 0, assists: 0 }]]),
+    statsByPeriod: new Map([
+      [8, { trainings: 3, goals: 0, assists: 0 }],
+      [9, { trainings: 6, goals: 1, assists: 1 }],
+    ]),
+  },
+  {
+    player: PLAYERS[29], // Женя
+    statsByPeriod: new Map([[9, { trainings: 2, goals: 0, assists: 1 }]]),
   },
 ];
